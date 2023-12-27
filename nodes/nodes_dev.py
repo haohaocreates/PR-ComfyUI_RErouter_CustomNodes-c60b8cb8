@@ -16,7 +16,7 @@ class test1:
     RETURN_TYPES = ("RE_TUPLE","MODEL", "CLIP", "VAE",)
     RETURN_NAMES = ("RE_tuple","MODEL_B", "CLIP_B", "VAE_B",)
     FUNCTION = "reroute"
-    CATEGORY = "(RE)route/Test"
+    CATEGORY = "(RE)route"
 	
     def reroute(self, RE_tuple, MODEL_B, CLIP_B, VAE_B,):
         return ((MODEL_B, CLIP_B, VAE_B), MODEL_B, CLIP_B, VAE_B,)
