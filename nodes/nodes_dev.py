@@ -4,13 +4,11 @@ class test1:
     @classmethod
     def INPUT_TYPES(cls):
         return {
-            "required": {
-                "RE_tuple": ("RE_TUPLE",),
-                "STP_T": ("STRING", {"forceInput": True}),
-                "STP_R": ("STRING", {"forceInput": True}),
-                "STP_U": ("STRING", {"forceInput": True})
-
-            }
+            "RE_tuple": ("RE_TUPLE",),
+            "STP_T": ("STRING", {"forceInput": True}),
+            "STP_R": ("STRING", {"forceInput": True}),
+            "STP_U": ("STRING", {"forceInput": True})
+            
         }
 
     RETURN_TYPES = ("RE_TUPLE","STRING", "STRING", "STRING",)
