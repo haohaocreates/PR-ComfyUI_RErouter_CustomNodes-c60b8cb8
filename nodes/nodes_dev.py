@@ -18,7 +18,7 @@ class test1:
     FUNCTION = "reroute"
     CATEGORY = "(RE)route"
 	
-    def reroute(self, STP_T, STP_R, STP_U, RE_tuple,):
+    def reroute(self, STP_T, STP_R, STP_U, RE_tuple):
         return (STP_T, STP_R, STP_U, (STP_T, STP_R, STP_U),)
 #====----Test2_DEV----====
 class test2:     
