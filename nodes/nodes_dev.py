@@ -23,7 +23,7 @@ class test1:
         elif STR2 is True:
             return (STR1, STR2,)
         else:
-            return (STR1)
+            return (STR1,)
 #====----Test2_DEV----====
 class test2:
 
