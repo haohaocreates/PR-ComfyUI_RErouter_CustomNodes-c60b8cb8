@@ -18,10 +18,8 @@ class reroute_rrt:
     CATEGORY = "1Girl Nodes"
 
     def reroute(self, MODEL, CLIP, VAE, UPSCALE_MODEL):
-				return (MODEL, CLIP, VAE, UPSCALE_MODEL,)
-#================================================
-     
-#====================================================
+	return (MODEL, CLIP, VAE, UPSCALE_MODEL,)
+#====----String_Input----====
 class string_input:
     @classmethod
     def INPUT_TYPES(s):
