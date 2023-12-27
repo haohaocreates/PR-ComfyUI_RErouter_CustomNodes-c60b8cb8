@@ -12,7 +12,7 @@ class test1:
     RETURN_TYPES = ("STRING",)
     RETURN_NAMES = ("STR_p",)
     FUNCTION = "reroute"
-    CATEGORY = "1Girl Nodes"
+    CATEGORY = "REroute Nodes/Test"
 
     def reroute(self, STR_p):
         return (STR_p,)
@@ -33,7 +33,7 @@ class test2:
     RETURN_TYPES = ("MODEL", "CLIP", "VAE", "UPSCALE_MODEL",)
     RETURN_NAMES = ("MODEL", "CLIP", "VAE", "UPSC",)
     FUNCTION = "reroute"
-    CATEGORY = "1Girl Nodes"
+    CATEGORY = "REroute Nodes/Test"
 
     def reroute(self, MODEL, CLIP, VAE, UPSCALE_MODEL):
-	return (MODEL, CLIP, VAE, UPSCALE_MODEL,)
+        return (MODEL, CLIP, VAE, UPSCALE_MODEL,)
