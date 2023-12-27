@@ -4,7 +4,7 @@ from .nodes.nodes_dev import *
 NODE_CLASS_MAPPINGS = {
     "Reroute (RE)": re_reroute,
     "String (RE)": re_string,
-    "Test DEV": test1,
+    "Test1 DEV": test1,
     "Test2 DEV": test2,
     }
     
