@@ -28,17 +28,15 @@ class test2:
     def INPUT_TYPES(cls):
         return {
             "required": {
-                "MODEL": ("MODEL",),
-                "CLIP": ("CLIP",),
-                "VAE": ("VAE",),
-                "UPSC": ("UPSCALE_MODEL",)
+                "SEED": ("INT", {"forceInput": True})
+
             }
         }
 
-    RETURN_TYPES = ("MODEL", "CLIP", "VAE", "UPSCALE_MODEL",)
-    RETURN_NAMES = ("MODEL", "CLIP", "VAE", "UPSC",)
+    RETURN_TYPES = ("INT",)
+    RETURN_NAMES = ("SEED",)
     FUNCTION = "reroute"
     CATEGORY = "REroute Nodes/Test"
 
-    def reroute(self, MODEL, CLIP, VAE, UPSCALE_MODEL):
-        return (MODEL, CLIP, VAE, UPSCALE_MODEL,)
+    def reroute(self, SEED):
+        return (SEED,)
