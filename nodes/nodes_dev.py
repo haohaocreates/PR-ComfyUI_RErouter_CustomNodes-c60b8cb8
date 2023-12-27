@@ -6,14 +6,14 @@ class test1:
         return {
             "required": {
                 "RE_tuple": ("RE_TUPLE",),
-                "STP_T": ("INT", {"forceInput": True}),
-                "STP_R": ("INT", {"forceInput": True}),
-                "STP_U": ("INT", {"forceInput": True})
+                "STP_T": ("STRING", {"forceInput": True}),
+                "STP_R": ("STRING", {"forceInput": True}),
+                "STP_U": ("STRING", {"forceInput": True})
 
             }
         }
 
-    RETURN_TYPES = ("RE_TUPLE","INT", "INT", "INT",)
+    RETURN_TYPES = ("RE_TUPLE","STRING", "STRING", "STRING",)
     RETURN_NAMES = ("RE_tuple","STP_T", "STP_R", "STP_U",)
     FUNCTION = "reroute"
     CATEGORY = "(RE)route"
