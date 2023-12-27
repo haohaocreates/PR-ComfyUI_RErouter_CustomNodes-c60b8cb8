@@ -5,7 +5,7 @@ NODE_CLASS_MAPPINGS = {
     "Reroute (RE)": re_reroute,
     "String (RE)": re_string,
     "Test DEV": test1,
-#    "Test2 DEV": test2,
+    "Test2 DEV": test2,
     }
     
 print("\033[34mComfyUI REroute Nodes: \033[92mLoaded\033[0m")
