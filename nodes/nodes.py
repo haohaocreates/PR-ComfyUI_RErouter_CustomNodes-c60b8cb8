@@ -15,10 +15,10 @@ class reroute_rrt:
     RETURN_TYPES = ("MODEL", "CLIP", "VAE", "UPSCALE_MODEL",)
     RETURN_NAMES = ("MODEL", "CLIP", "VAE", "UPSC",)
     FUNCTION = "reroute"
-    CATEGORY = "1Girl Nodes"
-
+    CATEGORY = "REroute Nodes"
+	
     def reroute(self, MODEL, CLIP, VAE, UPSCALE_MODEL):
-	return (MODEL, CLIP, VAE, UPSCALE_MODEL,)
+        return (MODEL, CLIP, VAE, UPSCALE_MODEL,)
 #====----String_Input----====
 class string_input:
     @classmethod
@@ -28,7 +28,7 @@ class string_input:
     RETURN_TYPES = ("STRING",)
     RETURN_NAMES = ("prompt",)
     FUNCTION = "get_value"
-    CATEGORY = "1Girl Nodes"
+    CATEGORY = "REroute Nodes"
 
     def get_value(self, prompt):
         return (prompt,)        
