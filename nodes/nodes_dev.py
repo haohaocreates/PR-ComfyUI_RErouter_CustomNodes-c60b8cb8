@@ -4,7 +4,9 @@ class test1:
     @classmethod
     def INPUT_TYPES(cls):
         return {"required": {
-            "STP_T": ("STRING", {"forceInput": True}),
+            "STP_T": ("STRING", {"forceInput": True})
+            },
+            "optional": {
             "STP_R": ("STRING", {"forceInput": True}),
             "STP_U": ("STRING", {"forceInput": True})
             }
