@@ -1,5 +1,5 @@
 #====----Test1_DEV----====
-class reroute_rrt:
+class test1:
 
     @classmethod
     def INPUT_TYPES(cls):
