@@ -8,4 +8,4 @@ NODE_CLASS_MAPPINGS = {
     "Test2 DEV": test2,
     }
     
-print("\033[34mComfyUI 1GirlFanboy Nodes: \033[92mLoaded\033[0m")
+print("\033[34mComfyUI REroute Nodes: \033[92mLoaded\033[0m")
