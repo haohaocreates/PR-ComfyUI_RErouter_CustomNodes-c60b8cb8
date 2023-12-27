@@ -18,7 +18,12 @@ class test1:
     CATEGORY = "(RE)route"
 	
     def reroute(self, STR1, STR2, STR3):
-        return (STR1, STR2, STR3,)
+        if STR2 and STR3 is True:
+            return (STR1, STR2, STR3,)
+        elif STR2 is True:
+            return (STR1, STR2,)
+        else:
+            return (STR1)
 #====----Test2_DEV----====
 class re_reroute:
 
