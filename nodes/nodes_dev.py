@@ -21,21 +21,23 @@ class test1:
     def reroute(self, RE_tuple, MODEL_B, CLIP_B, VAE_B,):
         return ((MODEL_B, CLIP_B, VAE_B), MODEL_B, CLIP_B, VAE_B,)
 #====----Test2_DEV----====
-class test2:
+class test2:     
 
     @classmethod
     def INPUT_TYPES(cls):
-        return {
-            "required": {
-                "SEED": ("INT", {"forceInput": True})
+               
+        return {"required": {       
+                    "text1": ("STRING", {"multiline": False, "default": "Hello"}),
+                    "text2": ("STRING", {"multiline": False, "default": "World"}),
+                    }
+                }
 
-            }
-        }
+    RETURN_TYPES = ("STRING",)
+    FUNCTION = "concatenate_text"
+    CATEGORY = "(RE)route"
 
-    RETURN_TYPES = ("INT",)
-    RETURN_NAMES = ("SEED",)
-    FUNCTION = "reroute"
-    CATEGORY = "REroute Nodes/Test"
+    def concatenate_text(self, text1, text2):
 
-    def reroute(self, SEED):
-        return (SEED,)
+        text_out = text1 + " " + text2
+        
+        return (text_out,)
