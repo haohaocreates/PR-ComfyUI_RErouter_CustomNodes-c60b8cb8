@@ -2,7 +2,6 @@ from .nodes.nodes import *
 from .nodes.nodes_dev import *
 
 NODE_CLASS_MAPPINGS = {
-    "Reroute (RE)": re_reroute,
     "String (RE)": re_string,
     "INT (RE)": re_int,
     "Test1 DEV": test1,
