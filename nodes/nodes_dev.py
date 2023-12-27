@@ -3,25 +3,23 @@ class test1:
 
     @classmethod
     def INPUT_TYPES(cls):
-        return {"optional": {
-            "RE_tuple": ("RE_TUPLE",)
-            },
-            "required": {
+        return {"required": {
             "STP_T": ("STRING", {"forceInput": True})
             },
             "optional": {
             "STP_R": ("STRING", {"forceInput": True}),
-            "STP_U": ("STRING", {"forceInput": True})
+            "STP_U": ("STRING", {"forceInput": True}),
+            "RE_tuple": ("RE_TUPLE",)
             }
         }
 
-    RETURN_TYPES = ("RE_TUPLE","STRING", "STRING", "STRING",)
-    RETURN_NAMES = ("RE_tuple","STP_T", "STP_R", "STP_U",)
+    RETURN_TYPES = ("STRING", "STRING", "STRING", "RE_TUPLE",)
+    RETURN_NAMES = ("STP_T", "STP_R", "STP_U","RE_tuple",)
     FUNCTION = "reroute"
     CATEGORY = "(RE)route"
 	
-    def reroute(self, RE_tuple, STP_T, STP_R, STP_U):
-        return ((STP_T, STP_R, STP_U), STP_T, STP_R, STP_U,)
+    def reroute(self, STP_T, STP_R, STP_U, RE_tuple,):
+        return (STP_T, STP_R, STP_U, (STP_T, STP_R, STP_U),)
 #====----Test2_DEV----====
 class test2:     
 
