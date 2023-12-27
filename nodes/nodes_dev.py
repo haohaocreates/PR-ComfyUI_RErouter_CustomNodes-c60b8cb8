@@ -25,7 +25,7 @@ class test1:
         else:
             return (STR1)
 #====----Test2_DEV----====
-class re_reroute:
+class test2:
 
     @classmethod
     def INPUT_TYPES(cls):
