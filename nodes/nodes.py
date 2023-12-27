@@ -8,17 +8,20 @@ class reroute_rrt:
                 "MODEL": ("MODEL",),
                 "CLIP": ("CLIP",),
                 "VAE": ("VAE",),
-                "UPSC": ("UPSCALE_MODEL",)
+                "UPSC": ("UPSCALE_MODEL",),
+                "STR_p": ("STRING", {"forceInput": True}),
+                "STR_n": ("STRING", {"forceInput": True}),
+                "SEED": ("INT", {"forceInput": True})
             }
         }
 
-    RETURN_TYPES = ("MODEL", "CLIP", "VAE", "UPSCALE_MODEL",)
-    RETURN_NAMES = ("MODEL", "CLIP", "VAE", "UPSC",)
+    RETURN_TYPES = ("MODEL", "CLIP", "VAE", "UPSCALE_MODEL", "STRING", "STRING", "INT",)
+    RETURN_NAMES = ("MODEL", "CLIP", "VAE", "UPSC", "STR_p", "STR_n", "SEED",)
     FUNCTION = "reroute"
-    CATEGORY = "REroute Nodes"
+    CATEGORY = "REroute Nodes/Test"
 	
-    def reroute(self, MODEL, CLIP, VAE, UPSCALE_MODEL):
-        return (MODEL, CLIP, VAE, UPSCALE_MODEL,)
+    def reroute(self, MODEL, CLIP, VAE, UPSCALE_MODEL, STR_p, STR_n, SEED):
+        return (MODEL, CLIP, VAE, UPSCALE_MODEL, STR_p, STR_n, SEED,)
 #====----String_Input----====
 class string_input:
     @classmethod
