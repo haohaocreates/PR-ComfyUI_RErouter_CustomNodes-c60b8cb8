@@ -5,22 +5,27 @@ class test1:
     def INPUT_TYPES(cls):
         return {
             "required": {
-                "MODEL": ("MODEL",),
-                "CLIP": ("CLIP",),
-                "VAE": ("VAE",),
+                "MODEL_B": ("MODEL",),
+                "CLIP_B": ("CLIP",),
+                "VAE_B": ("VAE",),
+                "MODEL_R": ("MODEL",),
+                "CLIP_R": ("CLIP",),
+                "VAE_R": ("VAE",),
+                "EM_LAT": ("LATENT",),
                 "UPSC": ("UPSCALE_MODEL",),
                 "STR_p": ("STRING", {"forceInput": True}),
-                "STR_n": ("STRING", {"forceInput": True})
+                "STR_n": ("STRING", {"forceInput": True}),
+                "SEED": ("INT", {"forceInput": True})
             }
         }
 
-    RETURN_TYPES = ("MODEL", "CLIP", "VAE", "UPSCALE_MODEL", "STRING", "STRING",)
-    RETURN_NAMES = ("MODEL", "CLIP", "VAE", "UPSC", "STR_p", "STR_n",)
+    RETURN_TYPES = ("MODEL", "CLIP", "VAE", "MODEL", "CLIP", "VAE", "LATENT", "UPSCALE_MODEL", "STRING", "STRING", "INT",)
+    RETURN_NAMES = ("MODEL_B", "CLIP_B", "VAE_B", "MODEL_R", "CLIP_R", "VAE_R", "EM_LAT", "UPSC", "STR_p", "STR_n", "SEED",)
     FUNCTION = "reroute"
     CATEGORY = "REroute Nodes/Test"
 	
-    def reroute(self, MODEL, CLIP, VAE, UPSCALE_MODEL, STR_p, STR_n):
-        return (MODEL, CLIP, VAE, UPSCALE_MODEL, STR_p, STR_n,)
+    def reroute(self, MODEL_B, CLIP_B, VAE_B, MODEL_R, CLIP_R, VAE_R, EM_LAT, UPSCALE_MODEL, STR_p, STR_n, SEED):
+        return (MODEL_B, CLIP_B, VAE_B, MODEL_R, CLIP_R, VAE_R, EM_LAT, UPSCALE_MODEL, STR_p, STR_n, SEED,)
 #====----Test2_DEV----====
 class test2:
 
