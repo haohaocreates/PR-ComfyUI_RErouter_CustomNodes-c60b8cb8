@@ -6,20 +6,20 @@ class test1:
         return {
             "required": {
                 "RE_tuple": ("RE_TUPLE",),
-                "MODEL_B": ("MODEL",),
-                "CLIP_B": ("CLIP",),
-                "VAE_B": ("VAE",)
+                "STP_T": ("INT", {"forceInput": True}),
+                "STP_R": ("INT", {"forceInput": True}),
+                "STP_U": ("INT", {"forceInput": True})
 
             }
         }
 
-    RETURN_TYPES = ("RE_TUPLE","MODEL", "CLIP", "VAE",)
-    RETURN_NAMES = ("RE_tuple","MODEL_B", "CLIP_B", "VAE_B",)
+    RETURN_TYPES = ("RE_TUPLE","INT", "INT", "INT",)
+    RETURN_NAMES = ("RE_tuple","STP_T", "STP_R", "STP_U",)
     FUNCTION = "reroute"
     CATEGORY = "(RE)route"
 	
-    def reroute(self, RE_tuple, MODEL_B, CLIP_B, VAE_B,):
-        return ((MODEL_B, CLIP_B, VAE_B), MODEL_B, CLIP_B, VAE_B,)
+    def reroute(self, RE_tuple, STP_T, STP_R, STP_U):
+        return ((STP_T, STP_R, STP_U), STP_T, STP_R, STP_U,)
 #====----Test2_DEV----====
 class test2:     
 
@@ -27,17 +27,15 @@ class test2:
     def INPUT_TYPES(cls):
                
         return {"required": {       
-                    "text1": ("STRING", {"multiline": False, "default": "Hello"}),
-                    "text2": ("STRING", {"multiline": False, "default": "World"}),
+                    "int": ("INT", {"multiline": False, "default": "0"})
+                    
                     }
                 }
 
-    RETURN_TYPES = ("STRING",)
-    FUNCTION = "concatenate_text"
+    RETURN_TYPES = ("INT",)
+    FUNCTION = "int"
     CATEGORY = "(RE)route"
 
-    def concatenate_text(self, text1, text2):
-
-        text_out = text1 + " " + text2
+    def concatenate_text(self, int):
         
-        return (text_out,)
+        return (int,)
