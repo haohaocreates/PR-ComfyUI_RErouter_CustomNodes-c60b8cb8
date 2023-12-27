@@ -1,5 +1,5 @@
 from .nodes.nodes import *
-#from .nodes.nodes_dev import *
+from .nodes.nodes_dev import *
 
 NODE_CLASS_MAPPINGS = {
     "Reroute (RE)": re_reroute,
