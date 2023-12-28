@@ -1,7 +1,3 @@
-#====----REroute_RE----====
-
-
-
 #====----String_RE----====
 class re_string:
     @classmethod
