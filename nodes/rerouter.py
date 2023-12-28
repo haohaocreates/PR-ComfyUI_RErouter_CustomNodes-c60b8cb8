@@ -1,5 +1,5 @@
 #====----(RE) route_----====
-class re_route_pack:
+class re_router_pack:
 
     @classmethod
     def INPUT_TYPES(cls):
@@ -30,7 +30,7 @@ class re_route_pack:
         return ((MODEL, CLIP, VAE, MODEL_R, CLIP_R, VAE_R, EMPT_LAT, UPSC, PRT_p, PRT_n, SEED, INT1, INT2, INT3),)
 
 #====----(RE) _route----====
-class re_route_unpack:
+class re_router_unpack:
 
     @classmethod
     def INPUT_TYPES(cls):
