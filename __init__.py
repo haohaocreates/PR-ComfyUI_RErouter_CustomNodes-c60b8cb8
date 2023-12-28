@@ -4,7 +4,7 @@ from .nodes.rerouter import *
 
 NODE_CLASS_MAPPINGS = {
     "(RE) route_": re_route_pack,
-    "(RE) _route": re_reroute_unpack,
+    "(RE) _route": re_route_unpack,
     "String (RE)": re_string,
     "Int (RE)": re_int
 #    "Test1 DEV": test1,
