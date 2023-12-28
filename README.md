@@ -12,4 +12,5 @@ cd ComfyUI\custom_nodes\ComfyUI_RErouter_CustomNodes
 
 git pull https://github.com/an90ray/ComfyUI_RErouter_CustomNodes.git
 
-![image](https://github.com/an90ray/ComfyUI_RErouter_CustomNodes/assets/154269455/801f289d-2c5d-413f-9b92-195f57f25606)
+![image](https://github.com/an90ray/ComfyUI_RErouter_CustomNodes/assets/154269455/a0ce1f33-dc37-4c4c-9381-90e51b2eb85e)
+
