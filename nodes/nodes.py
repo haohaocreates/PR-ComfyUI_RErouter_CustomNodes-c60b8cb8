@@ -24,6 +24,7 @@ class re_int:
         return {"required": {"int": ("INT", {"multiline": False, "default": "0"})}}
                    
     RETURN_TYPES = ("INT",)
+    RETURN_NAMES = ("int",)
     FUNCTION = "get_int"
     CATEGORY = "(RE)route"
 
