@@ -3,8 +3,8 @@ from .nodes.rerouter import *
 #from .nodes.nodes_dev import *
 
 NODE_CLASS_MAPPINGS = {
-    "(RE) route_": re_route_pack,
-    "(RE) _route": re_route_unpack,
+    "RErouter =>": re_router_pack,
+    "RErouter <=": re_router_unpack,
     "String (RE)": re_string,
     "Int (RE)": re_int
 #    "Test1 DEV": test1,
