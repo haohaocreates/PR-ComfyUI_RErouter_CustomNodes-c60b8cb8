@@ -19,7 +19,7 @@ class re_route_pack:
                 "SEED": ("INT", {"forceInput": True}),
                 "INT1": ("INT", {"forceInput": True}),
                 "INT2": ("INT", {"forceInput": True}),
-                "INT3": ("INT", {"forceInput": True})
+                "INT3": ("INT", {"forceInput": True})}}
 
     RETURN_TYPES = ("BUS_BASE",)
     RETURN_NAMES = ("bus_",)
@@ -30,7 +30,7 @@ class re_route_pack:
         return ((MODEL, CLIP, VAE, MODEL_R, CLIP_R, VAE_R, EMPT_LAT, UPSC, PRT_p, PRT_n, SEED, INT1, INT2, INT3),)
 
 #====----(RE) _route----====
-class re_reroute_unpack:
+class re_route_unpack:
 
     @classmethod
     def INPUT_TYPES(cls):
@@ -42,5 +42,5 @@ class re_reroute_unpack:
     FUNCTION = "re_unpack"
     CATEGORY = "(RE)route"
     
-    def re_unpack(self, _bus)
+    def re_unpack(self, _bus):
         return (_bus[0], _bus[1], _bus[2], _bus[3], _bus[4], _bus[5], _bus[6], _bus[7], _bus[8], _bus[9], _bus[10], _bus[11], _bus[12], _bus[13],)
