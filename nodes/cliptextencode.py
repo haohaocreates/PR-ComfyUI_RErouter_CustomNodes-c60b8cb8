@@ -34,9 +34,9 @@ class CLIPTextEncodeSDXL:
             "text_l": ("STRING", {"multiline": True, "default": "CLIP_L", "forceInput": True, "default": ""}), "clip": ("CLIP", ),
             }}
     RETURN_TYPES = ("CONDITIONING",)
-    FUNCTION = "(RE)router"
+    FUNCTION = "encode"
 
-    CATEGORY = "test"
+    CATEGORY = "(RE)router"
 
     def encode(self, clip, width, height, crop_w, crop_h, target_width, target_height, text_g, text_l):
         tokens = clip.tokenize(text_g)
