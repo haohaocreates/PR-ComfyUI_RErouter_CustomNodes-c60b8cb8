@@ -1,7 +1,7 @@
 import torch
 from nodes import MAX_RESOLUTION
 
-class CLIPTextEncodeSDXLRefiner:
+class re_CLIPTextEncodeSDXLRefiner:
     @classmethod
     def INPUT_TYPES(s):
         return {"required": {
@@ -20,7 +20,7 @@ class CLIPTextEncodeSDXLRefiner:
         cond, pooled = clip.encode_from_tokens(tokens, return_pooled=True)
         return ([[cond, {"pooled_output": pooled, "aesthetic_score": ascore, "width": width,"height": height}]], )
 
-class CLIPTextEncodeSDXL:
+class re_CLIPTextEncodeSDXL:
     @classmethod
     def INPUT_TYPES(s):
         return {"required": {
@@ -50,7 +50,7 @@ class CLIPTextEncodeSDXL:
         cond, pooled = clip.encode_from_tokens(tokens, return_pooled=True)
         return ([[cond, {"pooled_output": pooled, "width": width, "height": height, "crop_w": crop_w, "crop_h": crop_h, "target_width": target_width, "target_height": target_height}]], )
 
-class CLIPTextEncode:
+class re_CLIPTextEncode:
     @classmethod
     def INPUT_TYPES(s):
         return {"required": {"text": ("STRING", {"multiline": True, "forceInput": True, "default": ""}), "clip": ("CLIP", )}}
