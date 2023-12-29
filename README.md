@@ -9,7 +9,8 @@
   * ``` git pull https://github.com/an90ray/ComfyUI_RErouter_CustomNodes.git ```
 
 ## 
-![image](rerouter.png)
+![image](Rerouter.png)
 
 ## Usage example
-
+![image](workflows/preview_workflow_style_grid.jpg)
+![image](workflows/style_grid.jpg)
