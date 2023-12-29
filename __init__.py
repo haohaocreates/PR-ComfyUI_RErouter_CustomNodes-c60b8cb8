@@ -7,9 +7,9 @@ NODE_CLASS_MAPPINGS = {
     "RErouter <=": re_router_unpack,
     "String (RE)": re_string,
     "Int (RE)": re_int,
-    "CLIPTextEncode (RE)": CLIPTextEncode,
-    "CLIPTextEncodeSDXL (RE)": CLIPTextEncodeSDXL,
-    "CLIPTextEncodeSDXLRefiner": CLIPTextEncodeSDXLRefiner
+    "CLIPTextEncode (RE)": re_CLIPTextEncode,
+    "CLIPTextEncodeSDXL (RE)": re_CLIPTextEncodeSDXL,
+    "CLIPTextEncodeSDXLRefiner": re_CLIPTextEncodeSDXLRefiner
 
     }
     
