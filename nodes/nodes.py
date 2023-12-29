@@ -7,7 +7,7 @@ class re_string:
     RETURN_TYPES = ("STRING",)
     RETURN_NAMES = ("string",)
     FUNCTION = "get_string"
-    CATEGORY = "(RE)route"
+    CATEGORY = "(RE)router"
 
     def get_string(self, string):
         return (string,)        
@@ -22,7 +22,7 @@ class re_int:
     RETURN_TYPES = ("INT",)
     RETURN_NAMES = ("int",)
     FUNCTION = "get_int"
-    CATEGORY = "(RE)route"
+    CATEGORY = "(RE)router"
 
     def get_int(self, int):
         
