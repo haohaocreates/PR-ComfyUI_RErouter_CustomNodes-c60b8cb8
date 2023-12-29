@@ -9,7 +9,7 @@ NODE_CLASS_MAPPINGS = {
     "Int (RE)": re_int,
     "CLIPTextEncode (RE)": re_CLIPTextEncode,
     "CLIPTextEncodeSDXL (RE)": re_CLIPTextEncodeSDXL,
-    "CLIPTextEncodeSDXLRefiner": re_CLIPTextEncodeSDXLRefiner
+    "CLIPTextEncodeSDXLRefiner (RE)": re_CLIPTextEncodeSDXLRefiner
 
     }
     
