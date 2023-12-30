@@ -12,5 +12,11 @@
 ![image](Rerouter.png)
 
 ## Usage example
+If you want to reproduce it you should have some custom nodes.
+* ```https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes```
+* ```https://github.com/ltdrdata/ComfyUI-Impact-Pack```
+* ```https://github.com/twri/sdxl_prompt_styler```
+
 ![image](workflows/preview_workflow_style_grid.jpg)
+
 ![image](workflows/style_grid.jpg)
