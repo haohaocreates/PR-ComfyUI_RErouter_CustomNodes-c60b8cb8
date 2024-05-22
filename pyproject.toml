@@ -1,0 +1,14 @@
+[project]
+name = "comfyui_rerouter_customnodes"
+description = "Nodes: RErouter, String (RE), Int (RE)"
+version = "1.0.0"
+license = "LICENSE"
+
+[project.urls]
+Repository = "https://github.com/an90ray/ComfyUI_RErouter_CustomNodes"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "ComfyUI_RErouter_CustomNodes"
+Icon = ""
